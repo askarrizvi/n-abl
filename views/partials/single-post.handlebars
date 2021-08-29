@@ -1,21 +1,31 @@
-{{> post-info post}}
-
-{{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
-  </div>
-</form>
+<div class="card single-post-padding">
+    <h1 id="post-title" class="post-header">{{post.title}}</h1>
+    <h3>posted By{{post.usr.username}} on 1/07/2021</h3>
+    <div class="container">
+        <p id="post-body" class="post-text-padding">{{post.body}}</p>
+    </div>
+    {{{!edit or delete a post}}}
+    {{#if currentuser}}
+    <button id="edit-btn">Edit</button>
+    <button id="delete-btn">Delete</button>
 {{/if}}
+</div>
+{{{!add comments}}}
+<div class="padding-20">
+    <form id="comment-form" class="padding-20">
+        <label for="comment-text">Leave a comment</label>
+        <input class="padding-20" type="textarea" name="comment-text" id="comment-text">
+        <button class="padding-20" id="post-comment-btn">Post</button>
+    </form>
+</div>
 
-{{> comments post.comments}}
+{{#each post.comment as [acomment]}}
+{{>comment acomment}}
+{{/each}}
 
-{{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
+<link rel="stylesheet" src="/singlepost.css">
+<script src="/js/single-post.js"
+
+{{#if currentuser}}
+<script src="/js/edit-delete-post.js"></script>
 {{/if}}
