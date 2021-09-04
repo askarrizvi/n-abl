@@ -1,11 +1,12 @@
-## n-abl
+# N-abl
 
-# Description
+## Description
 In a world where we can get almost anything with a push or a click, it is no surprise that we have shifted a lot of our social 
 activity to digital space. People craving social contact can log onto a variety of websites to chat with others who want the 
 same thing. 
 We have created a room with an online space where users communicate with one another through text-based messages.
-# Table of Contents
+
+## Table of Contents
 
 1. [Installation](#Installation)
 2. [Usage](#Usage)
@@ -14,7 +15,7 @@ We have created a room with an online space where users communicate with one ano
 5. [Heroku](#Heroku)
 6. [Contributors](#Contributors)
 7. [Questions](#Questions)
-8. 
+ 
 ## Installation
  
 ## Usage
@@ -36,4 +37,4 @@ We have created a room with an online space where users communicate with one ano
  ## Questions
  
 
-This README was generated with ![image](https://user-images.githubusercontent.com/82125052/132098454-2e23a569-2833-47c0-a831-8986cd567636.png)
+This README was generated with ❤️ by all of the contributors.
