@@ -28,7 +28,7 @@ We have created an online space where users communicate with one another through
 ## Contributors!   
  * Scott Skinn      https://github.com/scottskinn
  * Askar Rizvi      https://github.com/askarrizvi
- * Dennis Guzman    https://github.com/d3guzman-dennis.com 
+ * Dennis de Guzman    https://github.com/d3guzman-dennis.com 
  * Joanne Hickey    https://github.com/jlhickey 
  
  
