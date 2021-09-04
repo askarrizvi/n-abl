@@ -25,7 +25,7 @@ We have created an online space where users communicate with one another through
 
 ## Heroku
 
-## Contributors!   
+## Contributors   
  * Scott Skinn      https://github.com/scottskinn
  * Askar Rizvi      https://github.com/askarrizvi
  * Dennis de Guzman    https://github.com/d3guzman-dennis.com 
