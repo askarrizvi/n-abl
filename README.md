@@ -4,7 +4,7 @@
 In a world where we can get almost anything with a push or a click, it is no surprise that we have shifted a lot of our social 
 activity to digital space. People craving social contact can log onto a variety of websites to chat with others who want the 
 same thing. 
-We have created a room with an online space where users communicate with one another through text-based messages.
+We have created an online space where users communicate with one another through text-based messages.
 
 ## Table of Contents
 
