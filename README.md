@@ -1,6 +1,20 @@
-# N-Abl
-## Description
+# n-Abl
 
+## Table of Contents
+
+1. [User Story] (#User Story)
+2. [Acceptance Criteria] (#Acceptance Criteria)
+3. [Installation](#Installation)
+4. [Usage](#Usage)
+5. [Credit](#Credit)
+6. [Liscence](#Liscence)
+7. [Heroku](#Heroku)
+8. [Contributors](#Contributors)
+9. [Questions](#Questions)
+
+## User Story
+
+## Acceptance Criteria
 GIVEN a reddit-style forum site for mental health<br>
 WHEN I visit the site for the first time<br>
 THEN I am presented with the homepage, which includes the login page and sign up button<br>
@@ -34,20 +48,7 @@ THEN I am able to delete or update my post and taken back to an updated homepage
 WHEN I click on the logout option in the navigation<br>
 THEN I am signed out of the site<br>
 WHEN I am idle on the site for more than a set time<br>
-THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
-
-
-## Table of Contents
-
-1. [Installation](#Installation)
-2. [Usage](#Usage)
-3. [Credit](#Credit)
-4. [Liscence](#Liscence)
-5. [Heroku](#Heroku)
-6. [Contributors](#Contributors)
-7. [Questions](#Questions)
- 
-## Installation
+THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments## Installation
  
 ## Usage
 
