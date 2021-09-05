@@ -10,6 +10,10 @@ User.hasMany(Post, {
   foreignKey: 'user_id'
 });
 
+Tag.hasMany(Comment, {
+  foreignKey: 'tag_id'
+});  
+
 Post.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
@@ -21,6 +25,10 @@ User.belongsToMany(Post, {
 
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
+});
+
+Tag.belongsToMany(Comment, {
+  foreignKey: 'tag_id'
 });
 
 Post.belongsToMany(User, {
@@ -57,6 +65,10 @@ Comment.belongsTo(Post, {
   foreignKey: 'post_id',
   onDelete: 'SET NULL'
 });
+
+Comment.belongsTo(Tags, {
+  foreignKey: 'tag_id',
+});  
 
 User.hasMany(Comment, {
   foreignKey: 'user_id',
