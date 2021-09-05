@@ -1,6 +1,6 @@
 const Post = require('./post');
 const User = require('./user');
-const Vote = require('./vote');
+const PVote = require('./vote');
 const CVote = require('./cvote');
 const Tags = require('./tags');
 const Comment = require('./comment');
@@ -38,13 +38,23 @@ Post.belongsToMany(User, {
   onDelete: 'SET NULL'
 });
 
-Vote.belongsTo(User, {
+PVote.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
 });
 
-Vote.belongsTo(Post, {
+PVote.belongsTo(Post, {
   foreignKey: 'post_id',
+  onDelete: 'SET NULL'
+});
+
+CVote.belongsTo(User, {
+  foreignKey: 'user_id',
+  onDelete: 'SET NULL'
+});
+
+CVote.belongsTo(Comment, {
+  foreignKey: 'comment_id',
   onDelete: 'SET NULL'
 });
 
