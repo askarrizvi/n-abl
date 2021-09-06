@@ -6,7 +6,12 @@
     </div>
     <div class="text">
       {{comment_text}}
+      {{cvote_count}} {{format_plural "point" cvote_count}}
+
+      <button type="button" class="cupvote-btn" id={{id}}>upvote comment</button>
     </div>
   </section>
   {{/each}}
 </div>
+
+<script src="/javascript/comment-upvote.js"></script>

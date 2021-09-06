@@ -1,9 +1,22 @@
 const router = require('express').Router();
-const { Comment } = require('../../models');
+const { Comment, Cvote, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
-  Comment.findAll()
+  Comment.findAll({
+    attributes: [
+      'id',
+      'comment_text',
+      'post_id',
+      [sequelize.literal('(SELECT COUNT(*) FROM cvote WHERE comments.id = cvote.comment_id)'), 'cvote_count']
+    ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
+  })
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
       console.log(err);
@@ -27,12 +40,13 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/upvote', withAuth, (req, res) => {
-  Comment.upvote({ ...req.body, user_id: req.session.user_id }, { Vote, Post, User })
-  .then(updatedVoteData => res.json(updatedVoteData))
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+  // custom static method created in models/Post.js
+  Comment.upvote({ ...req.body, user_id: req.session.user_id }, { Cvote, User })
+    .then(updatedVoteData => res.json(updatedVoteData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 router.delete('/:id', withAuth, (req, res) => {
