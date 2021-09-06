@@ -1,7 +1,6 @@
 # n-Abl
 
 ## Table of Contents
-
 1. [User Story](#User Story)
 2. [Acceptance Criteria](#Acceptance Criteria)
 3. [Installation](#Installation)
