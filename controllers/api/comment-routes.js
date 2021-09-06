@@ -8,12 +8,17 @@ router.get('/', (req, res) => {
       'id',
       'comment_text',
       'post_id',
-      [sequelize.literal('(SELECT COUNT(*) FROM cvote WHERE comments.id = cvote.comment_id)'), 'cvote_count']
+      'tag_id',
+      [sequelize.literal('(SELECT COUNT(*) FROM cvote WHERE comments.id = cvote.comment_id)'), 'cvote_count'],
     ],
     include: [
       {
         model: User,
         attributes: ['username']
+      },
+      {
+        model: Tag,
+        attributes: ['tag_text']
       }
     ]
   })
