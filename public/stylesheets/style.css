@@ -4,11 +4,11 @@
 
 .titlebtn {
   background: none;
-  border: none;
+  border: 2px;
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #fcfaf8;
+  color: #040358;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -27,8 +27,8 @@ body, html {
   padding: 0;
   margin: 10px 30px;
   font-family: sans-serif;
-  color: #063875;
-  background-color: #faf5f5;
+  color: #000808;
+  background-color: #f5efbe;
 }
 
 a {
@@ -39,14 +39,14 @@ a {
 }
 
 a:hover {
-  color: #a0c7f7;
+  color: #3c98d6;
 }
 
 button {
   background-color: #fdfbfb;
-  border: 0;
+  border: 2px;
   padding: 1%;
-  color: white;
+  color: rgb(5, 52, 151);
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -95,12 +95,12 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgb(15, 7, 7);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-  background-color: #fcf9f9;
+  background-color: #f5efbe;
 }
 
 header h1 {
@@ -118,7 +118,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: rgb(84, 39, 245);
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -126,7 +126,7 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #a3ccfd;
+  color: #055cc5;
 }
 
 
@@ -196,10 +196,10 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(229, 208, 147);
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 90%;
-  background-color: #faf8f8;
+  background-color: #f5efbe;
 }
