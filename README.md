@@ -4,8 +4,8 @@
 
 
 
-1. [User Story] (#User Story)
-2. [Acceptance Criteria] (#Acceptance Criteria)
+1. [User Story](#User Story)
+2. [Acceptance Criteria](#Acceptance Criteria)
 3. [Installation](#Installation)
 4. [Usage](#Usage)
 5. [Credit](#Credit)
