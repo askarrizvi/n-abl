@@ -2,8 +2,8 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Comment extends Model {
-static upvote(body, models) {
-    return models.Vote.create({
+  static upvote(body, models) {
+    return models.Cvote.create({
       user_id: body.user_id,
       comment_id: body.comment_id
     }).then(() => {
@@ -13,25 +13,24 @@ static upvote(body, models) {
         },
         attributes: [
           'id',
-          'comment_url',
-          'title',
+          'comment_text',
           'created_at',
-          [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE comment.id = vote.comment_id)'), 'vote_count']
+          [sequelize.literal('(SELECT COUNT(*) FROM cvote WHERE comment.id = cvote.comment_id)'), 'cvote_count']
         ],
-        include: [
+        /*include: [
           {
-            model: models.Post,
-            attributes: ['id', 'post_text', 'post_id', 'user_id', 'created_at'],
+            model: models.Comment,
+            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
             include: {
               model: models.User,
               attributes: ['username']
             }
           }
-        ]
+        ]*/
       });
     });
   }
-}}
+}
 
 Comment.init(
   {
@@ -59,6 +58,13 @@ Comment.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'post',
+        key: 'id'
+      }
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'tag',
         key: 'id'
       }
     }

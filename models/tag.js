@@ -17,20 +17,13 @@ Tags.init(
         len: [1, 10]
       }
     },
-    comment_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'comment',
-        key: 'id'
-      }
-    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'vote'
+    modelName: 'tag'
   }
 );
 
