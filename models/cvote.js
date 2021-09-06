@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class PVote extends Model {}
+class CVote extends Model {}
 
-PVote.init(
+CVote.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -17,10 +17,10 @@ PVote.init(
         key: 'id'
       }
     },
-    post_id: {
+    comment_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'post',
+        model: 'comment',
         key: 'id'
       }
     }
@@ -34,4 +34,4 @@ PVote.init(
   }
 );
 
-module.exports = PVote;
+module.exports = CVote;

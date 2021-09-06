@@ -13,6 +13,17 @@
 9. [Questions](#Questions)
 
 ## User Story
+AS a member of an online community
+I WANT to share my mental health issue or challenge as a post
+SO THAT I can obtain support from other members to help me cope with or overcome it.
+
+AS a member of an online community
+I WANT to share helpful tools and links as a comment to a post
+SO THAT I can support other members going through a similar experience in different ways (e.g. media to make them laugh).
+
+AS a member of an online community
+I WANT to be able to upvote posts and comments I find relevant and helpful to me and the community
+SO THAT I can contribute to the success of the other members in finding or giving support.
 
 ## Acceptance Criteria
 GIVEN a reddit-style forum site for mental health<br>
