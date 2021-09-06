@@ -9,7 +9,7 @@
 6. [Liscence](#Liscence)
 7. [Heroku](#Heroku)
 8. [Contributors](#Contributors)
-9. [Questions](#Questions)
+
 
 ## User Story
 AS a member of an online community
@@ -76,7 +76,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
  
  
  
- ## Questions
+
  
 
 This README was generated with ❤️ by all of the contributors.
