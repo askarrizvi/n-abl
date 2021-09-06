@@ -64,7 +64,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ## Credit
  
 ## Liscence
-https://opensource.org/licenses/MPL-2.0
+https://opensource.org/licenses/MPL-2.0<br>
 Licensed under Mozilla Public License 2.0
 
 ## Heroku
