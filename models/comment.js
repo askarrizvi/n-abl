@@ -31,7 +31,7 @@ static upvote(body, models) {
       });
     });
   }
-}}
+}
 
 Comment.init(
   {

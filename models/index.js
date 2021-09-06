@@ -10,7 +10,7 @@ User.hasMany(Post, {
   foreignKey: 'user_id'
 });
 
-Tag.hasMany(Comment, {
+Tags.hasMany(Comment, {
   foreignKey: 'tag_id'
 });  
 
@@ -20,14 +20,14 @@ Post.belongsTo(User, {
 });
 
 User.belongsToMany(Post, {
-  through: Vote,
+  through: PVote,
   as: 'voted_posts',
 
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
 });
 
-Tag.belongsToMany(Comment, {
+Tags.belongsToMany(Comment, {
   foreignKey: 'tag_id'
 });
 
@@ -89,4 +89,4 @@ Post.hasMany(Comment, {
   foreignKey: 'post_id'
 });
 
-module.exports = { User, Post, Vote, CVote, Tags, Comment };
+module.exports = { User, Post, PVote, CVote, Tags, Comment };
