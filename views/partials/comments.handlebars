@@ -1,10 +1,10 @@
 <div class="comments">
   Filter by:
   <div class="tags">
-  <a href="/post/{{post_id}}">All</a>
-  <a href="/post/{{post_id}}/1">General Info</a>
-  <a href="/post/{{post_id}}/2">Humour</a>
-  <a href="/post/{{post_id}}/3">Media</a>
+  <a href="/post/{{post_id}}" class="color2">All</a>
+  <a href="/post/{{post_id}}/1" class="color2">General Info</a>
+  <a href="/post/{{post_id}}/2" class="color2">Humour</a>
+  <a href="/post/{{post_id}}/3" class="color2">Media</a>
   </div>
   
   {{#each this}}
@@ -19,7 +19,7 @@
       <button type="button" class="cupvote-btn" id={{id}}>upvote comment</button>
     </div>
     <div class="tags small">
-      <a title="" href="" class="color1">{{tag.tag_text}}</a>
+      <a title="" href="" class="color2">{{tag.tag_text}}</a>
     
     </div>
   </section>
