@@ -14,12 +14,12 @@
   transition: color .1s;
 }
 
-.username {
-  background: none;
-  padding: 0;
-  text-align:right;
-  align-items: center;
-
+.hero{
+    background-image: url(../background.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position:center;
+    position: relative;
 }
 
 body, html {
