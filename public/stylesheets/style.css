@@ -45,7 +45,7 @@
     }
 
     .tags a:before {
-    content: "n-Abl";
+    content: "";
     position: absolute;
     top:0;
     left: -12px;
@@ -57,7 +57,7 @@
     }
 
 .tags a:after {
-    content: "n-Abl";
+    content: "";
     position: absolute;
     top: 10px;
     left: 1px;

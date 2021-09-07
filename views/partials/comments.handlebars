@@ -1,9 +1,11 @@
 <div class="comments">
   Filter by:
-  <a href="/post/{{post_id}}">  <button type="button" class="all-btn" id='all'>All</button></a>
-  <a href="/post/{{post_id}}/1">  <button type="button" class="geninfo-btn" id=1>General Info</button></a>
-  <a href="/post/{{post_id}}/2">  <button type="button" class="humour-btn" id=2>Humour</button></a>
-  <a href="/post/{{post_id}}/3">  <button type="button" class="geninfo-btn" id=3>Media</button></a>
+  <div class="tags">
+  <a href="/post/{{post_id}}">All</a>
+  <a href="/post/{{post_id}}/1">General Info</a>
+  <a href="/post/{{post_id}}/2">Humour</a>
+  <a href="/post/{{post_id}}/3">Media</a>
+  </div>
   
   {{#each this}}
   <section class="comment">
@@ -16,8 +18,9 @@
 
       <button type="button" class="cupvote-btn" id={{id}}>upvote comment</button>
     </div>
-    <div class="tags">
-      {{tag.tag_text}}
+    <div class="tags small">
+      <a title="" href="">{{tag.tag_text}}</a>
+    
     </div>
   </section>
   {{/each}}
