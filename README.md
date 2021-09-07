@@ -60,10 +60,18 @@ WHEN I am idle on the site for more than a set time<br>
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments## Installation
  
 ## Process
-* HTLV          * SQL           * FUZZY SEARCH
-* CSS           * SEQUELIZE     * SENTIMENT ANALYSIS
-* NODE          * ORM           * VALIDATOR
-* EXPRESS       * MVC           * JEST          
+* HTLV                   
+* CSS              
+* NODE                     
+* EXPRESS                         
+* SQL  
+* SEQUELIZE  
+* ORM
+* MVC
+* FUZZY SEARCH
+* JEST   
+* VALIDATOR
+* SENTIMENT ANALYSIS
 
 ## Credit
  
