@@ -24,6 +24,7 @@ app.use(session(sess));
 const helpers = require('./utils/helpers');
 
 const hbs = exphbs.create({ helpers });
+//const hbs = exphbs.create({ sentimenta });
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

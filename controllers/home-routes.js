@@ -39,6 +39,9 @@ router.get('/', (req, res) => {
         model: User,
         attributes: ['username']
       }
+    ],
+    order: [
+      ['id', 'DESC'],
     ]
   })
     .then(dbPostData => {

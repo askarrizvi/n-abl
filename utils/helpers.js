@@ -1,3 +1,6 @@
+var Sentiment = require('sentiment');
+var sentiment = new Sentiment();
+
 module.exports = {
   format_date: date => {
     return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(
@@ -18,5 +21,13 @@ module.exports = {
     }
 
     return word;
-  }
+  },
+  sentiment_analyze: text => {
+    if(sentiment.analyze(text).score>1){
+        return "positive";
+    }
+    else{
+        return "negative";
+    }
+}
 };

@@ -8,7 +8,7 @@
   </div>
   
   {{#each this}}
-  <section class="comment">
+  <section class="comment {{sentiment_analyze comment_text}}">
     <div class="meta">
       {{user.username}} on {{format_date created_at}}
     </div>

@@ -190,14 +190,26 @@ main {
   margin-bottom: 5%;
 }
 
+.negative {
+  padding: 1%;
+  margin-bottom: 1%;
+  background-color: lightcoral;
+}
+
+.positive {
+  padding: 1%;
+  margin-bottom: 1%;
+  background-color: lightgreen;
+}
+
 .comment {
   padding: 1%;
   margin-bottom: 1%;
 }
 
-.comment:nth-child(odd) {
+/*.comment:nth-child(odd) {
   background-color: #fff5eb;
-}
+}*/
 
 .comment .meta {
   font-size: 90%;

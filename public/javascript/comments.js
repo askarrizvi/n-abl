@@ -18,8 +18,6 @@ async function commentFormHandler(event) {
     tag_id = 3;
   }
 
-  //console.log(tag+": "+tag_id);
-
   if (comment_text) {
     const response = await fetch('/api/comments', {
       method: 'POST',
