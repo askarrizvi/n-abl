@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { Comment, Cvote, User } = require('../../models');
+const sequelize = require('../../config/connection');
+const { Comment, Cvote, User, Tag } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
@@ -23,6 +24,50 @@ router.get('/', (req, res) => {
     ]
   })
     .then(dbCommentData => res.json(dbCommentData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+router.get('/tag/:tagid', (req, res) => {
+  Comment.findAll({
+    where: {
+      tag_id: req.params.tagid
+    },
+    attributes: [
+      'id',
+      'comment_text',
+      'post_id',
+      'tag_id',
+      [sequelize.literal('(SELECT COUNT(*) FROM cvote WHERE comment.id = cvote.comment_id)'), 'cvote_count'],
+    ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      },
+      {
+        model: Tag,
+        attributes: ['tag_text']
+      }
+    ]
+  })
+    .then(dbCommentData => res.json(dbCommentData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+router.post('/', withAuth, (req, res) => {
+  // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
+  Post.create({
+    title: req.body.title,
+    post_url: req.body.post_url,
+    user_id: req.session.user_id
+  })
+    .then(dbPostData => res.json(dbPostData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);

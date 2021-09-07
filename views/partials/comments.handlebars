@@ -1,4 +1,10 @@
 <div class="comments">
+  Filter by:
+  <a href="/post/{{post_id}}">  <button type="button" class="all-btn" id='all'>All</button></a>
+  <a href="/post/{{post_id}}/1">  <button type="button" class="geninfo-btn" id=1>General Info</button></a>
+  <a href="/post/{{post_id}}/2">  <button type="button" class="humour-btn" id=2>Humour</button></a>
+  <a href="/post/{{post_id}}/3">  <button type="button" class="geninfo-btn" id=3>Media</button></a>
+  
   {{#each this}}
   <section class="comment">
     <div class="meta">

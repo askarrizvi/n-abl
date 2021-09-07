@@ -14,7 +14,7 @@
   </div>
 </form>
 
-{{> comments post.comments}}
+{{> comments post.comments post_id=post.id}}
 {{/if}}
 
 {{#unless loggedIn}}
@@ -22,6 +22,6 @@
 {{/unless}}
 
 {{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
+<script src="/javascript/comments.js"></script>
 <script src="/javascript/upvote.js"></script>
 {{/if}}
