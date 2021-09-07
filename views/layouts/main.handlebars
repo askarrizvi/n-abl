@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>n-Abl</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 {{#if loggedIn}}
+
 <body>
   <div class="wrapper">
     <header>
-      <a href="/"><h1 style="color: rgb(5, 17, 189); font-size: 75px;">n-Abl</h1></a>
-      <nav>
-        
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bg-custom-2 justify-content-between nav-fill w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="nabllogocleanedcolor.png" alt="" height="150" class="img-responsive d-inline-block align-text-top">
+          </a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+              <a href="/dashboard" class="btn-no-style">dashboard</a>
+              </li>
+              <li class="nav-item">
+              <button id="logout" class="btn-no-style">logout</button>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        
+
       </nav>
       {{/if}}
     </header>
@@ -30,7 +43,7 @@
       Copyright &copy; 2021 All Rights Reserved by DJSA
     </footer>
   </div>
-  
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}

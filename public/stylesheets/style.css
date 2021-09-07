@@ -31,7 +31,6 @@
 body, html {
   height: 100%;
   padding: 0;
-  margin: 10px 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000808;
 }
@@ -108,8 +107,7 @@ form label {
 }
 
 header {
-    padding: 0px 50px;
-    margin: 20 0px;
+
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
@@ -130,7 +128,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: rgb(84, 39, 245);
+  color: #e4f9f5;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -138,7 +136,7 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #055cc5;
+  color: whitesmoke;
 }
 
 
@@ -214,6 +212,10 @@ footer {
   padding: 1%;
   font-size: 90%;
   background-color: #f5efbe;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #576d69 0%, #40514e 100%);
 }
 
 /* Css3 tags */
