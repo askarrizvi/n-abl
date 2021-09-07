@@ -3,7 +3,7 @@
 1. [User Story](#UserStory)
 2. [Acceptance Criteria](#AcceptanceCriteria)
 3. [Installation](#Installation)
-4. [Usage](#Usage)
+4. [Process](#Process)
 5. [Credit](#Credit)
 6. [Liscence](#Liscence)
 7. [Heroku](#Heroku)
@@ -59,7 +59,11 @@ THEN I am signed out of the site<br>
 WHEN I am idle on the site for more than a set time<br>
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments## Installation
  
-## Usage
+## Process
+* HTLV          * SQL           * FUZZY SEARCH
+* CSS           * SEQUELIZE     * SENTIMENT ANALYSIS
+* NODE          * ORM           * VALIDATOR
+* EXPRESS       * MVC           * JEST          
 
 ## Credit
  
