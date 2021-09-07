@@ -1,0 +1,25 @@
+<!-- Forum List -->
+
+<div class="card mb-2">
+    <div class="card-body p-2 p-sm-3">
+        <div class="media forum-item">
+            <i class="mr-3 fas fa-user-tie fa-5x" alt="User" /></i>
+            <div class="media-body">
+                <h6>{{title}}</a>
+                </h6>
+                <p class="text-secondary">
+                    {{post_text}}
+                </p>
+                <p class="text-muted "><span
+                        class="text-secondary font-weight-bold">{{user.username}}</span> replied <span
+                        class="text-secondary font-weight-bold">{{format_date created_at}}</span></p>
+            </div>
+            <div class="text-muted small text-center align-self-center">
+                <span class="d-none d-sm-inline-block"><button type="button" class="upvote-btn"><i class="far fa-thumbs-up fa-2x"></i></button> {{vote_count}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Forum List -->
+
+<script src="/javascript/upvote.js"></script>

@@ -1,16 +1,20 @@
-{{> hp-post-info post}}
+{{> sp-post-info post}}
 
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
-        <button type="button" class="upvote-btn">upvote</button>
-        </div>
-        <div>
-    <textarea name="comment-body"></textarea>
+    <textarea name="comment-body" placeholder="Comment"></textarea>
   </div>
-
   <div>
-    <button type="submit">add comment</button>
+  <label for="tags">Choose a tag:</label>
+  <select name="tags" id="tags">
+    <option value="geninfo">General Info</option>
+    <option value="humour">Humour</option>
+    <option value="media">Media</option>
+  </select>
+  </div>
+  <div>
+    <button class="btn-secondary" type="submit">add comment</button>
   </div>
 </form>
 

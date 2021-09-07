@@ -61,24 +61,11 @@ router.get('/tag/:tagid', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-  // expects {title: 'Taskmaster goes public!', post_text: 'https://taskmaster.com/press', user_id: 1}
-  Post.create({
-    title: req.body.title,
-    post_text: req.body.post_text,
-    user_id: req.session.user_id
-  })
-    .then(dbPostData => res.json(dbPostData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
-
-router.post('/', withAuth, (req, res) => {
   // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
+  console.log(req.body.tag_id);
   Comment.create({
     comment_text: req.body.comment_text,
-    tag_id: req.session.tag_id,
+    tag_id: req.body.tag_id,
     user_id: req.session.user_id,
     post_id: req.body.post_id
   })
