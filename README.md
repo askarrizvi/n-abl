@@ -5,7 +5,7 @@
 3. [Installation](#Installation)
 4. [Process](#Process)
 5. [Credit](#Credit)
-6. [Liscence](#Liscence)
+6. [License](#License)
 7. [Heroku](#Heroku)
 8. [Contributors](#Contributors)
 
@@ -75,7 +75,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Credit
  
-## Liscence
+## License
 https://opensource.org/licenses/MPL-2.0<br>
 Licensed under Mozilla Public License 2.0
 
