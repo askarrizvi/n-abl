@@ -50,6 +50,7 @@
     -webkit-box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
     box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
     }
+
 .titlebtn {
   background: none;
   border: 2px;
@@ -86,7 +87,7 @@ body, html {
   body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    background-image: url("./background.jpeg");
+    background-image: url("./desktop/background.jpeg");
     background-size: cover;
 }
 
@@ -154,16 +155,16 @@ form label {
   flex-direction: column;
 }
 
-/* header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
-  background-color: #f5e0f5; 
-}*/
-
+header {
+    padding: 0px 50px;
+    margin: 20 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    color: whitesmoke;
+}
 header h1 {
-  font-size: 2rem;
+  font-size: 60px;
 }
 
 main {
