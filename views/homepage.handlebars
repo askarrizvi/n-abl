@@ -1,20 +1,14 @@
 {{#if loggedIn}}
 
-<div class="inner-wrapper">
-  <!-- Inner sidebar -->
-  <div class="inner-sidebar">
-    <!-- Inner sidebar header -->
-    <div class="inner-sidebar-header justify-content-center">
-      <a href="/" <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal"
-        data-target="#threadModal">
-        NEW POST
+<div class="inner-main-body mb-3 p-2 p-sm-3 collapse forum-content show"></div>
+      <a href="/">
+        <button class="btn btn-secondary has-icon p-2 p-sm-3" type="button">
+          NEW POST
         </button></a>
-    </div>
-  </div>
-</div>
+
 <!-- /Inner sidebar header -->
 
-<div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
+
   <ul class="post-list">
     {{#each posts as |post|}}
     <li>
