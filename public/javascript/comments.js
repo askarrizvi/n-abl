@@ -17,6 +17,8 @@ async function commentFormHandler(event) {
   else if (tag == "media") {
     tag_id = 3;
   }
+  console.log("hello");
+  console.log(tag_id, post_id, comment_text);
 
   if (comment_text) {
     const response = await fetch('/api/comments', {
