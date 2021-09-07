@@ -1,7 +1,27 @@
 * {
   box-sizing: border-box;
 }
-
+.tags a.color1 {background: #f58220;}
+.tags a.color1:after {border-color: transparent transparent transparent #f58220
+}
+.small a {
+	height: 21px;
+	line-height: 21px;
+	float: none;
+	font-size: 11px;
+	}
+	
+.small a:before {
+    right: 0;
+    top: 8px;
+    border-width: 10px 0 10px 10px;
+	}
+	
+.small a:after {
+	right: -11px;
+	top: 0;
+	border-width: 11px 0 11px 11px;
+	}
 .tags a {    
     display: inline-block;
     height: 24px;
