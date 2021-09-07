@@ -1,11 +1,31 @@
 {{#if loggedIn}}
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+
+<div class="inner-wrapper">
+  <!-- Inner sidebar -->
+  <div class="inner-sidebar">
+    <!-- Inner sidebar header -->
+    <div class="inner-sidebar-header justify-content-center">
+      <a href="/" <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal"
+        data-target="#threadModal">
+        NEW POST
+        </button></a>
+    </div>
+  </div>
+</div>
+<!-- /Inner sidebar header -->
+
+<div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
+  <ul class="post-list">
+    {{#each posts as |post|}}
+    <li>
+      {{> hp-post-info post }}
+    </li>
+    {{/each}}
+  </ul>
+</div>
+
+
+
 {{else}}
 <div class="container h-80">
   <div class="row align-items-center h-100">
@@ -15,8 +35,7 @@
         <p id="profile-name" class="profile-name-card"></p>
         <form class="login-form">
           <label for="email-login">email:</label>
-          <input type="text" id="email-login" class="form-control form-group"
-            placeholder="email" required autofocus/>
+          <input type="text" id="email-login" class="form-control form-group" placeholder="email" required autofocus />
           <label for="password-login">password:</label>
           <input type="password" name="password" id="password-login" class="form-control form-group"
             placeholder="password" required autofocus>
